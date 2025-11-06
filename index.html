@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>スガ電器店 | 地域の電気屋さん</title>
+  <meta name="description" content="地域密着の電気設備工事店。スイッチ1個の交換から、照明・配線・エアコンまで。まずはお気軽にご相談ください。" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ページ固有の微調整（画像サイズや色味はPNGに寄せる） */
+    :root{ --hero-grad:#eaf2ff; }
+    .hero{ background: radial-gradient(1200px 600px at 50% -10%, var(--hero-grad), transparent 70%), linear-gradient(#f9fbff,#f3f6fb); }
+    .hero h1{ letter-spacing:.01em; }
+    .callout{ background:#eaf1ff; color:#334155; border:1px solid #dbe5ff; border-radius:16px; padding:16px; text-align:center; box-shadow:var(--shadow); width:min(720px, 94%); margin: 26px auto 0; }
+    .service-card:nth-child(1){ background:#fff7ed; }     /* 薄いベージュ */
+    .service-card:nth-child(2){ background:#ecfeff; }     /* 薄いミント */
+  </style>
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <div class="brand-logo">S</div>
+        <div>
+          <div style="font-weight:700;">スガ電気店</div>
+          <div style="font-size:12px; color:var(--muted);">地域の電気屋さん</div>
+        </div>
+      </div>
+      <button class="menu-btn" aria-label="メニュー" id="menuBtn">☰</button>
+      <nav class="nav" id="navLinks">
+        <a href="#services">サービス内容</a>
+        <a href="#prices">料金</a>
+        <a href="#about">私たちについて</a>
+        <a href="#access">アクセス</a>
+        <a href="#news">お知らせ</a>
+      </nav>
+      <a class="cta-top" href="#access">お見積り</a>
+    </div>
+  </header>
+
+  <!-- ヒーロー -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge">電気工事のご相談はお気軽に</span>
+        <h1>ちょっとだけの工事でも<br>1点からお任せください</h1>
+        <p class="lead">地域密着の電気設備工事店。スイッチ1個の交換から、配線・照明・エアコンまで。<br>小回りの利くお店です。まずはご相談ください。</p>
+        <div class="call-buttons">
+          <a class="btn phone" href="tel:0123456789" aria-label="電話で相談">今すぐ電話する</a>
+          <a class="btn line" href="#" aria-label="LINEで問い合わせ">LINEで問い合わせ</a>
+        </div>
+      </div>
+      <div class="hero-photo" style="max-width:540px;">
+        <img src="https://images.unsplash.com/photo-1574901200090-ca061722bdb9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870" alt="店舗の照明写真（差し替え可）">
+      </div>
+    </div>
+  </section>
+
+  <!-- サービス内容（2枚の大カード + サムネ） -->
+  <section id="services" class="section services">
+    <div class="container-narrow">
+      <h2 class="section-title">サービス内容</h2>
+      <p class="muted">住まい・店舗の電気工事に幅広く対応します。交換・増設・LED化もお任せください。</p>
+
+      <div class="service-grid" style="margin-top:18px;">
+        <article class="card service-card">
+          <h3>照明・配線工事</h3>
+          <p class="muted">器具交換 / スイッチ・コンセント / LED化 / 配線整理 など</p>
+          <div class="thumbs">
+            <img src="https://images.unsplash.com/photo-1552529232-9e6cb081de19??q=80&w=600&auto=format&fit=crop" alt="配線1">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=600&auto=format&fit=crop" alt="配線2">
+            <img src="https://images.unsplash.com/photo-1677256796269-3c1a9d3fb14d??q=80&w=600&auto=format&fit=crop" alt="照明1">
+            <img src="https://images.unsplash.com/photo-1481277542470-605612bd2d61?q=80&w=600&auto=format&fit=crop" alt="照明2">
+          </div>
+        </article>
+        <article class="card service-card">
+          <h3>電気工事一式</h3>
+          <p class="muted">分電盤 / 防犯・インターフォン / アンテナ / 業務用電源 など</p>
+          <div class="thumbs">
+            <img src="https://images.unsplash.com/photo-1544724569-5f546fd6f2b5??q=80&w=600&auto=format&fit=crop" alt="機器1">
+            <img src="https://images.unsplash.com/photo-1607706189992-eae578626c86?q=80&w=600&auto=format&fit=crop" alt="機器2">
+            <img src="https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?q=80&w=600&auto=format&fit=crop" alt="機器3">
+            <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=600&auto=format&fit=crop" alt="機器4">
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 料金（6枚グリッド） -->
+  <section id="prices" class="section works" style="background:#fff7f0;">
+    <div class="container-narrow">
+      <h2 class="section-title">料金の目安</h2>
+      <p class="muted">作業・部材により変動します。詳細はお見積り時にご案内します。</p>
+      <div class="grid" style="margin-top:18px;">
+        <article class="work"><img src="https://images.unsplash.com/photo-1525362081669-2b476bb628c3?q=80&w=900&auto=format&fit=crop" alt="ブレーカー交換"><div class="meta"><span>ブレーカー交換</span><span class="price">5,000円〜</span></div></article>
+        <article class="work"><img src="https://images.unsplash.com/photo-1557170853-b2bed5160ab1?q=80&w=900&auto=format&fit=crop" alt="LED化"><div class="meta"><span>LED化</span><span class="price">12,000円〜</span></div></article>
+        <article class="work"><img src="https://images.unsplash.com/photo-1525362081669-2b476bb628c3?q=80&w=900&auto=format&fit=crop" alt="間接照明"><div class="meta"><span>間接照明</span><span class="price">8,000円〜</span></div></article>
+        <article class="work"><img src="https://images.unsplash.com/photo-1531762948975-73032b7b61f4?q=80&w=900&auto=format&fit=crop" alt="シャンデリア交換"><div class="meta"><span>シャンデリア交換</span><span class="price">要見積</span></div></article>
+        <article class="work"><img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=900&auto=format&fit=crop" alt="インターフォン交換"><div class="meta"><span>インターフォン交換</span><span class="price">12,000円〜</span></div></article>
+        <article class="work"><img src="https://images.unsplash.com/photo-1607706189992-eae578626c86?q=80&w=900&auto=format&fit=crop" alt="外灯設置"><div class="meta"><span>外灯設置</span><span class="price">8,000円〜</span></div></article>
+      </div>
+      <div class="callout">まずは写真を添えてご相談ください。LINEからのご依頼も大歓迎です。</div>
+    </div>
+  </section>
+
+  <!-- 私たちについて -->
+  <section id="about" class="section about">
+    <div class="container about-grid">
+      <div class="feature-list">
+        <h2 class="section-title">私たちについて</h2>
+        <div class="feature"><div class="icon ic-1">✓</div><div><strong>地域密着の早い対応</strong><p class="muted" style="margin:6px 0 0;">近隣エリアは最短即日。小さな工事も喜んで伺います。</p></div></div>
+        <div class="feature"><div class="icon ic-2">✓</div><div><strong>2年保証・アフターケア</strong><p class="muted" style="margin:6px 0 0;">作業後の不具合は無償対応。交換部材もメーカー保証付き。</p></div></div>
+        <div class="feature"><div class="icon ic-3">✓</div><div><strong>明朗会計・事前見積り</strong><p class="muted" style="margin:6px 0 0;">作業前に料金を提示。追加費用が出る場合も事前にご説明します。</p></div></div>
+      </div>
+      <div class="profile-photo" style="max-width:540px;">
+        <img src="https://images.unsplash.com/photo-1609253932702-796cbf3d3171?q=80&w=1200&auto=format&fit=crop" alt="スタッフ写真（差し替え可）">
+      </div>
+    </div>
+  </section>
+
+  <!-- アクセス -->
+  <section id="access" class="section access">
+    <div class="container-narrow">
+      <h2 class="section-title">アクセス</h2>
+      <div class="access-grid" style="margin-top:14px;">
+        <div class="card info-card">
+          <h3 style="margin:4px 0 8px;">店舗情報</h3>
+          <ul style="list-style:none; padding:0; margin:0; color:#334155; display:grid; gap:8px;">
+            <li><strong>住所：</strong> 〒123-4567 東京都◯◯区◯◯1-2-3</li>
+            <li><strong>営業時間：</strong> 平日 9:00 - 18:30 / 土曜 9:00 - 17:00</li>
+            <li><strong>定休日：</strong> 日曜・祝日</li>
+            <li><strong>電話：</strong> 01-2345-6789</li>
+            <li><strong>メール：</strong> info@example.com</li>
+          </ul>
+        </div>
+        <div class="card" style="padding:12px;">
+          <div class="map">Googleマップ（後で埋め込み）</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- お知らせ -->
+  <section id="news" class="section news">
+    <div class="container-narrow">
+      <h2 class="section-title">お知らせ</h2>
+      <div class="list" style="margin-top:12px;">
+        <div class="news-item"><div class="news-date">2025/02/14</div><div>エアコン工事のご予約・ご相談はLINEからがスムーズです。</div></div>
+        <div class="news-item"><div class="news-date">2025/01/28</div><div>ブレーカー交換の即日対応、エリア拡大しました。</div></div>
+        <div class="news-item"><div class="news-date">2024/12/20</div><div>年末年始の営業時間のお知らせ。</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-title">店舗情報</div>
+          <div>〒123-4567 東京都◯◯区◯◯1-2-3</div>
+          <div>TEL: 01-2345-6789</div>
+          <div>MAIL: info@example.com</div>
+        </div>
+        <div>
+          <div class="footer-title">対応エリア</div>
+          <div>◯◯区・△△区・□□市 ほか周辺地域</div>
+          <div class="footer-title" style="margin-top:10px;">営業時間</div>
+          <div>平日 9:00 - 18:30 / 土曜 9:00 - 17:00</div>
+        </div>
+        <div>
+          <div class="footer-title">SNS</div>
+          <div>LINE・Instagram・X など（後でリンク）</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+        <div>© <span id="year"></span> スガ電気店 All Rights Reserved.</div>
+        <a href="#top" style="color:#e5e7eb;">ページ上部へ ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 年号
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // モバイルメニュー
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+    menuBtn?.addEventListener('click', () => navLinks.classList.toggle('open'));
+  </script>
+</body>
+</html>
